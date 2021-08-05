@@ -1,7 +1,7 @@
 mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/outdoors-v8',
+    style: 'mapbox://styles/mapbox/dark-v10',
     center: restaurant.geometry.coordinates, 
     zoom: 10
 });
