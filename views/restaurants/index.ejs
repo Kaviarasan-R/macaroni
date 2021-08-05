@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container">
+  <h1>Restaurants</h1>
+    <div class="row">
+      <% for (let restaurant of restaurants){%>
+      <div class="row mb-3 mr-2 col-lg-3">
+        <div class="card">
+          <img src="<%= restaurant.images%>" class="card-img-top" alt="Image not available" style="width:230px;height:300px;">
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <%= restaurant.title %>
+            </h5>
+            <p class="card-text">
+              <%= restaurant.description %>
+            </p> 
+            <a class="btn btn-primary btn-sm" href="/restaurants/<%=restaurant._id%>">Show Items</a>
+          </div>
+        </div>
+      </div>
+      <% }%>
+    </div>
+</div>
